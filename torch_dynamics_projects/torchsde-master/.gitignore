@@ -1,0 +1,15 @@
+.idea
+.DS_Store
+.lib
+__pycache__
+.ipynb_checkpoints
+diagnostics/plots/
+build/
+dist/
+.vscode/
+*.egg-info/
+benchmarks/plots/
+CMakeLists.txt
+restats
+*-darwin.so
+**.pyc
