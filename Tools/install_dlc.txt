@@ -1,0 +1,170 @@
+
+docker cp /home/arun/miniconda2/lib/libatomic.so.1  2624f7eeffae:/home/linuxbrew/snpe-1.41.0/snpe-1.41.0.2173/lib/aarch64-linux-gcc4.9/
+
+source ./envsetup.sh -t /usr/local/lib/python3.5/dist-packages/tensorflow/
+
+# To container
+docker cp /home/arun/workspace/keras_implementation_posenet/Tensorflow_PersonLab-master/model/personlab/frozen_model_posenet.pb  2624f7eeffae:/home/linuxbrew/
+
+
+ snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node ResizeBilinear,ResizeBilinear_1,concat_256,concat_529,ResizeBilinear_4  \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+
+
+'kp_maps/Sigmoid,short_offsets/Conv2D,mid_offsets/Conv2D,long_offsets/Conv2D,seg_mask/Sigmoid'
+
+# Running
+snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node kp_maps/Sigmoid \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+                       
+                       
+snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node 'ResizeBilinear' \
+                       --out_node 'ResizeBilinear_1' \
+                       --out_node 'concat_256' \
+                       --out_node 'concat_529' \
+                       --out_node 'ResizeBilinear_4' \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+                       
+
+#Running                       
+snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node 'ResizeBilinear' \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+                       
+#Running
+snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node 'ResizeBilinear_1' \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+                                              
+#Running                  
+snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node 'ResizeBilinear' \
+                       --out_node 'ResizeBilinear_1' \
+                       --out_node 'ResizeBilinear_4' \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+                       
+snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node 'ResizeBilinear_4' \
+                       --out_node 'concat_529' \
+                       --out_node 'concat_256' \
+                       --out_node 'ResizeBilinear' \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+                       
+                       
+Output Node Names: 
+ResizeBilinear_4,concat_529,concat_256,ResizeBilinear
+     
+#Running
+snpe-tensorflow-to-dlc --input_network ./frozen_model_posenet.pb \
+                       --input_dim 'Placeholder' "1,401,401,3" \
+                       --out_node 'ResizeBilinear_1' \
+                       --out_node 'ResizeBilinear' \
+                       --out_node 'ResizeBilinear_4' \
+                       --output_path personlab_model.dlc \
+                       --allow_unconsumed_nodes \
+             
+
+                      
+                
+docker commit 2624f7eeffae  arun/dlc_converter:version1
+docker commit 15e8170fe677  arun/dlc_converter:version3
+
+docker cp 2624f7eeffae:/home/linuxbrew/personlab_model.dlc  .  From container
+docker cp 2624f7eeffae:/home/linuxbrew/personlab_model.dlc  .
+
+docker cp 2624f7eeffae:/tmp/personlab_model.html .
+docker cp ac31111a7b1f:/tmp/human-pose-estimation.html .
+docker cp ac31111a7b1f:/tmp/model-mobilenet_v1_101.html .
+
+docker cp ac31111a7b1f:/home/linuxbrew/model-mobilenet_v1_101.dlc  .
+
+
+
+snpe-dlc-viewer -i personlab_model.dlc
+
+#environment setup
+source ./envsetup.sh -t /usr/local/lib/python3.5/dist-packages/tensorflow/
+
+source /home/linuxbrew/snpe-1.41.0/snpe-1.41.0.2173/bin/envsetup.sh -t /usr/local/lib/python3.5/dist-packages/tensorflow/
+source /home/linuxbrew/snpe-1.41.0/snpe-1.41.0.2173/bin/envsetup.sh -t /usr/local/lib/python3.5/dist-packages/onnx/
+
+source /home/linuxbrew/snpe-1.40.0/snpe-1.40.0.2130/bin/envsetup.sh -t /usr/local/lib/python3.5/dist-packages/tensorflow/
+
+echo 'source /home/linuxbrew/snpe-1.41.0/snpe-1.41.0.2173/bin/envsetup.sh -t /usr/local/lib/python3.5/dist-packages/tensorflow/' >> ~/.bashrc 
+echo 'source /home/linuxbrew/snpe-1.41.0/snpe-1.41.0.2173/bin/envsetup.sh -t /usr/local/lib/python3.5/dist-packages/onnx/' >> ~/.bashrc 
+
+
+
+#To container
+docker cp /home/arun/workspace/keras_implementation_posenet/tensorflow_Realtime_Multi-Person_Pose_Estimation-master/env3.6/lib/python3.6/site-packages/onnx 31c4ab625bd0:/usr/local/lib/python3.5/dist-packages/
+
+docker cp /home/arun/workspace/keras_implementation_posenet/tensorflow_Realtime_Multi-Person_Pose_Estimation-master/model_opset_6.onnx	 711924ad8499:/home/linuxbrew/
+
+
+
+
+
+
+bazel-bin/tensorflow/tools/graph_transforms/summarize_graph --in_graph=/home/arun/workspace/pose_net_com_results/posenet-python-master/_models/model-mobilenet_v1_101.pb
+
+#output
+Found 1 possible inputs: (name=image, type=float(1), shape=[1,?,?,3]) 
+No variables spotted.
+Found 4 possible outputs: (name=offset_2, op=BiasAdd) (name=displacement_fwd_2, op=BiasAdd) (name=displacement_bwd_2, op=BiasAdd) (name=heatmap, op=Sigmoid) 
+Found 3313961 (3.31M) const parameters, 0 (0) variable parameters, and 0 control_edges
+Op types used: 104 Const, 64 Identity, 30 BiasAdd, 27 Relu6, 18 Conv2D, 13 DepthwiseConv2dNative, 12 StridedSlice, 7 Pack, 4 AddV2, 2 FloorMod, 1 BatchToSpaceND, 1 Placeholder, 1 Shape, 1 Sigmoid, 1 SpaceToBatchND, 1 Sub
+To use with tensorflow/tools/benchmark:benchmark_model try these arguments:
+bazel run tensorflow/tools/benchmark:benchmark_model -- --graph=/home/arun/workspace/pose_net_com_results/posenet-python-master/_models/model-mobilenet_v1_101.pb --show_flops --input_layer=image --input_layer_type=float --input_layer_shape=1,-1,-1,3 --output_layer=offset_2,displacement_fwd_2,displacement_bwd_2,heatmap
+
+snpe-tensorflow-to-dlc --input_network ./model-mobilenet_v1_101.pb \
+                       --input_dim 'image' "1,401,401,3" \
+                       --out_node 'offset_2' \
+                       --out_node 'displacement_fwd_2' \
+                       --out_node 'displacement_bwd_2' \
+                       --out_node 'heatmap' \
+                       --output_path model-mobilenet_v1_101.dlc \
+                       --allow_unconsumed_nodes 
+
+docker cp /home/arun/workspace/pose_net_com_results/posenet-python-master/_models/model-mobilenet_v1_101.pb ac31111a7b1f:/home/linuxbrew/
+
+bazel-bin/tensorflow/tools/graph_transforms/summarize_graph --in_graph=/home/arun/workspace/keras_implementation_posenet/Tensorflow_PersonLab-master/model/personlab/frozen_model_posenet.pb
+
+#output
+Found 1 possible inputs: (name=Placeholder, type=float(1), shape=[1,401,401,3]) 
+No variables spotted.
+Found 4 possible outputs: (name=ResizeBilinear_4, op=ResizeBilinear) (name=concat_529, op=ConcatV2) (name=concat_256, op=ConcatV2) (name=ResizeBilinear, op=ResizeBilinear) 
+Found 47044410 (47.04M) const parameters, 0 (0) variable parameters, and 0 control_edges
+Op types used: 7561 Const, 1452 Mul, 1221 Add, 1188 Cast, 792 Sub, 660 Fill, 530 ConcatV2, 528 Select, 528 GatherNd, 494 StridedSlice, 396 Reshape, 396 Range, 396 ExpandDims, 396 LogicalOr, 354 Identity, 264 Less, 264 Floor, 264 Ceil, 264 Greater, 134 Pad, 132 AddN, 132 Split, 132 Pack, 110 Conv2D, 100 Relu, 100 FusedBatchNorm, 44 BiasAdd, 26 SpaceToBatchND, 26 BatchToSpaceND, 5 ResizeBilinear, 2 Sigmoid, 2 MaxPool, 1 Placeholder
+To use with tensorflow/tools/benchmark:benchmark_model try these arguments:
+bazel run tensorflow/tools/benchmark:benchmark_model -- --graph=/home/arun/workspace/keras_implementation_posenet/Tensorflow_PersonLab-master/model/personlab/frozen_model_posenet.pb --show_flops --input_layer=Placeholder --input_layer_type=float --input_layer_shape=1,401,401,3 --output_layer=ResizeBilinear_4,concat_529,concat_256,ResizeBilinear
+
+
+Error: mul_55, mul_279
+
+snpe-onnx-to-dlc --input_network human-pose-estimation.onnx --output_path human-pose-estimation.dlc
+
+snpe-onnx-to-dlc --input_network model_opset_6.onnx--output_path model_opset_6.dlc
+
+
+
+
+
+    
+

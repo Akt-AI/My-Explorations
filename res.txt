@@ -1,0 +1,445 @@
+.
+├── benchmarking
+│   ├── 2022.12.08 MLCommons Community Meeting.pdf
+│   ├── bench.pdf
+│   ├── cloud_computing_2021_3_10_20011.pdf
+│   ├── InferBench_Understanding_Deep_Learning_Inference_S.pdf
+│   ├── MLPerf INT8 BERT Finetuning.pdf
+│   ├── nips17-dawnbench.pdf
+│   └── s13040-017-0154-4.pdf
+├── books.txt
+├── cloud
+│   ├── Amazon SageMaker.pdf
+│   ├── aws-overview.pdf
+│   └── sagemaker-api.pdf
+├── computational_budget_calc
+│   └── memory_calc
+│       ├── bert_arch.py
+│       ├── calculate_cost_per_million_samples.py
+│       ├── example2.py
+│       ├── example.py
+│       ├── export_graph_svg.py
+│       ├── total_memory.py
+│       └── total.py
+├── CV_ARUN
+│   └── main.pdf
+├── DL
+│   ├── communique-de-presse-cnrs-13oct2020-eng.pdf
+│   ├── Deep.Learning.for.Coders.with.fastai.and.PyTorch.Howard.Gugger.OReilly.9781492045526.EBooksWorld.ir.pdf
+│   ├── Deep-Learning-with-PyTorch.pdf
+│   ├── dlojz1_presentation_jeanzay_gpu_v2.pdf
+│   ├── TF_Certificate_Candidate_Handbook.pdf
+│   ├── tp1_consignes_en.pdf
+│   └── zlib.pub_natural-language-processing-with-transformers.pdf
+├── DynamicalSystems
+│   ├── 2001.01328.pdf
+│   ├── Anaconda-files
+│   │   ├── An_Index_Anaconda.txt
+│   │   ├── housing.txt
+│   │   ├── lena.jpg
+│   │   ├── lena.png
+│   │   ├── Microbes.png
+│   │   ├── Multifractal.png
+│   │   ├── Newton_Fractal.png
+│   │   ├── Program_01a.py
+│   │   ├── Program_01b.py
+│   │   ├── Program_01c.py
+│   │   ├── Program_01d.py
+│   │   ├── Program_01e.py
+│   │   ├── Program_01f.py
+│   │   ├── Program_01g.py
+│   │   ├── Program_02a.py
+│   │   ├── Program_02b.py
+│   │   ├── Program_02c.py
+│   │   ├── Program_02d.py
+│   │   ├── Program_02e.py
+│   │   ├── Program_02f.py
+│   │   ├── Program_02g.py
+│   │   ├── Program_03a.py
+│   │   ├── Program_03b.py
+│   │   ├── Program_03c.py
+│   │   ├── Program_04a.py
+│   │   ├── Program_05a.py
+│   │   ├── Program_05b.py
+│   │   ├── Program_05c.py
+│   │   ├── Program_05d.py
+│   │   ├── Program_06a.py
+│   │   ├── Program_06b.py
+│   │   ├── Program_07a.py
+│   │   ├── Program_07b.py
+│   │   ├── Program_07c.py
+│   │   ├── Program_08a.py
+│   │   ├── Program_08b.py
+│   │   ├── Program_08c.py
+│   │   ├── Program_08d.py
+│   │   ├── Program_09a.py
+│   │   ├── Program_09b.py
+│   │   ├── Program_09c.py
+│   │   ├── Program_09d.py
+│   │   ├── Program_10a.py
+│   │   ├── Program_10b.py
+│   │   ├── Program_10c.py
+│   │   ├── Program_10d.py
+│   │   ├── Program_10e.py
+│   │   ├── Program_10f.py
+│   │   ├── Program_10g.py
+│   │   ├── Program_11a.py
+│   │   ├── Program_12a.py
+│   │   ├── Program_12b.py
+│   │   ├── Program_12c.py
+│   │   ├── Program_12d.py
+│   │   ├── Program_13a.py
+│   │   ├── Program_13b.py
+│   │   ├── Program_13c.py
+│   │   ├── Program_14a.py
+│   │   ├── Program_14b.py
+│   │   ├── Program_14c.py
+│   │   ├── Program_14d.py
+│   │   ├── Program_14e.py
+│   │   ├── Program_15a.py
+│   │   ├── Program_15b.py
+│   │   ├── Program_15c.py
+│   │   ├── Program_15d.py
+│   │   ├── Program_16a.py
+│   │   ├── Program_16b.py
+│   │   ├── Program_16c.py
+│   │   ├── Program_17a.py
+│   │   ├── Program_17b.py
+│   │   ├── Program_17c.py
+│   │   ├── Program_17d.py
+│   │   ├── Program_18a.py
+│   │   ├── Program_18b.py
+│   │   ├── Program_18c.py
+│   │   ├── Program_18d.py
+│   │   ├── Program_18e.py
+│   │   ├── Program_18f.py
+│   │   ├── Program_18g.py
+│   │   ├── Program_19a.py
+│   │   ├── Program_19b.py
+│   │   ├── Program_19c.py
+│   │   ├── Program_19d.py
+│   │   ├── Program_20a.py
+│   │   ├── Program_20b.py
+│   │   ├── Program_20c.py
+│   │   ├── Program_20d.py
+│   │   ├── Program_21a.py
+│   │   ├── Program_21b.py
+│   │   ├── Program_21c.py
+│   │   ├── Program_21d.py
+│   │   ├── Program_21e.py
+│   │   └── Voltage-Time Plot.png
+│   ├── boeing-nonlinear-chaos-fractals.pdf
+│   ├── Dynamical Systems with Applications using Python by Stephen Lynch (z-lib.org).pdf
+│   ├── Graphs, Networks and Algorithms by Dieter Jungnickel (auth.) (z-lib.org).pdf
+│   ├── IDLE-files
+│   │   ├── An_Index_IDLE.txt
+│   │   ├── euclid_algorithm.py
+│   │   ├── F2C.py
+│   │   ├── F2K.py
+│   │   ├── fibonacci.py
+│   │   ├── f_mu.py
+│   │   ├── fractal_tree_color.py
+│   │   ├── fractal_tree.py
+│   │   ├── grade.py
+│   │   ├── guess_number.py
+│   │   ├── koch_snowflake.py
+│   │   ├── koch_square.py
+│   │   ├── pythag_triples.py
+│   │   ├── sierpinski.py
+│   │   ├── sierpinski_square.py
+│   │   ├── sum_n.py
+│   │   └── sum_primes.py
+│   ├── plots
+│   │   ├── 3d-parametric-curve.png
+│   │   ├── barnsley-fern.png
+│   │   ├── belousov-zhabotinski-reaction.png
+│   │   ├── chaos-control-henon-map.png
+│   │   ├── chaos-control-logistic-map.png
+│   │   ├── chua-circuit-bifurcation.png
+│   │   ├── contour-plot.png
+│   │   ├── dde-piecewise-function.png
+│   │   ├── duffing-equation-bifurcation.png
+│   │   ├── error-between-xn-and-x0.png
+│   │   ├── fft-noisy-signal-2.png
+│   │   ├── fft-noisy-signal.png
+│   │   ├── fitzhugh-nagumo-half-adder.png
+│   │   ├── fitzhugh-nagumo-limit-cycle.png
+│   │   ├── fourier-transform.png
+│   │   ├── generalized-delta learning-rule.png
+│   │   ├── generalized-synchronization.png
+│   │   ├── hamiltonian.png
+│   │   ├── henon-map-iteration.png
+│   │   ├── hodgkin-huxley-neuron.png
+│   │   ├── homoclinic-bifurcation2.png
+│   │   ├── homoclinic-bifurcation.png
+│   │   ├── hopf-bifurcation.png
+│   │   ├── ikeda-map-bifurcation.png
+│   │   ├── ikeda-map-iteration.png
+│   │   ├── implicit-curves-intersection.png
+│   │   ├── iterative-map-power-spectra-1.png
+│   │   ├── iterative-map-power-spectra-2.png
+│   │   ├── josephson-junction-limit-cycle-bifurcation.png
+│   │   ├── josephson-junction-limit-cycle.png
+│   │   ├── julia-set-colormap.png
+│   │   ├── julia-set-plot-points.png
+│   │   ├── koch-curve.png
+│   │   ├── lienard-system-limit-cycle.png
+│   │   ├── logistic-map-bifurcation.png
+│   │   ├── logistic-map-vs-lyapunov-exponent.png
+│   │   ├── lorenz-attractor.png
+│   │   ├── mandelbrot.png
+│   │   ├── microbes-1.png
+│   │   ├── microbes-2.png
+│   │   ├── microbes-3.png
+│   │   ├── microbes-4.png
+│   │   ├── minimal-chaotic-neuromodule-iteration.png
+│   │   ├── neuromodule-bifurcation.png
+│   │   ├── newton-fractal.png
+│   │   ├── numerical-truncated-series.png
+│   │   ├── pendulum.png
+│   │   ├── phase-portrait-linear.png
+│   │   ├── phase-portrait-nonlinear.png
+│   │   ├── phase-portrait.png
+│   │   ├── pinched-hysteresis-memristor.png
+│   │   ├── poincare-first-return-map.png
+│   │   ├── poincare-section.png
+│   │   ├── predator-prey.png
+│   │   ├── raccoon-bw.png
+│   │   ├── raccoon-color.png
+│   │   ├── racoon-grey.png
+│   │   ├── rossler-attractor.png
+│   │   ├── saddle-node-bifurcation.png
+│   │   ├── sierpenski-square.png
+│   │   ├── sierpinski-triangle.png
+│   │   ├── simple-curve.png
+│   │   ├── snic-bifurcation.png
+│   │   ├── surface-contour-plots.png
+│   │   ├── tau-dq-f-alpha-curves.png
+│   │   ├── tent-map-iteration.png
+│   │   ├── two-lorenz-systems.png
+│   │   └── voltage-time-plot.png
+│   └── uvadlc-notebooks-readthedocs-io-en-latest.pdf
+├── ML
+│   ├── An Introduction to Statistical  Learning Seventh Printing.pdf
+│   ├── IMX-MACHINE-LEARNING-UG.pdf
+│   ├── Natural Language Processing with Python - O'Reilly2009.pdf
+│   ├── The AI Ladder.pdf
+│   └── Training ML models at scale with Amazon SageMaker_Final.pdf
+├── MLFlow
+│   ├── ieee_mlflow.pdf
+│   ├── Industry-MateiZaharia-MLFlow.pdf
+│   └── L-G-0014387618-0049213416.pdf
+├── MLOPs
+│   ├── 1650189848484.pdf
+│   ├── awsdocs-neuron-readthedocs-hosted-com-en-latest.pdf
+│   ├── debian-handbook.pdf
+│   ├── dokumen.pub_practical-mlops-operationalizing-machine-learning-models-1nbsped-1098103017-9781098103019-n-4964661.epub
+│   ├── eBook_ThePracticalGuideToGitOps.pdf
+│   ├── GitLab_GitOps_1.pdf
+│   ├── hyperparameter-optimization-in-machine-learning-make-your-machine-learning-and-deep-learning-models-more-efficient-9781484265789-9781484265796_compress.pdf
+│   ├── practical-mlops-ebook.pdf
+│   └── serving-machine-learning-models-9781492024064.pdf
+├── papers
+│   ├── 21_what_language_model_to_train_i.pdf
+│   ├── 2bit_model.pdf
+│   ├── bigscience-master.zip
+│   ├── bloom.pdf
+│   ├── LION.pdf
+│   ├── LLM_TPU_PJIT.pdf
+│   ├── misc
+│   │   └── kivy.pdf
+│   ├── ML Interview Cheat Sheet.pdf
+│   ├── PIVX-White.pdf
+│   ├── recent_read
+│   │   ├── AttentionAllYouNeed.pdf
+│   │   ├── Large Transformer Model Inference Optimization _ Lil'Log.pdf
+│   │   ├── mlperf_inference_1911.02549.pdf
+│   │   ├── mlperf_training_1910.01500.pdf
+│   │   └── Protein_structure_pred_s41586-021-03819-2.pdf
+│   └── slides_6_drl_en.pdf
+├── post-training-model_optimization
+│   ├── 5A-1.pdf
+│   ├── Ceze_2020_Embedded_Vision_Summit_Slides_Final.pdf
+│   ├── how-to-use-apache-tvm-to-optimize-your-ml-models_iteblog.com.pdf
+│   └── TVM_paper.pdf
+├── QC
+│   ├── 03_quantum_lim.pdf
+│   ├── 2019.09.06-06-Kiloran-QMACHINE.pdf
+│   ├── 31658179800805.pdf
+│   ├── balopat-cirq-rtd-readthedocs-io-en-stable.pdf
+│   ├── docs-pennylane-ai-en-stable.zip
+│   ├── HGrayQCLecture3v2.pdf
+│   ├── jpakela_1.pdf
+│   ├── newkronecker.pdf
+│   ├── P42375-nvidia-gtc2022-quantumnas-hanruiwang.pdf
+│   ├── pennylane-cirq-readthedocs-io-en-latest.pdf
+│   ├── programming-quantum-computers-essential-algorithms-and-code-samples-.pdf
+│   ├── ProgrammingQuantumComputers.pdf
+│   ├── QC_Grover.pdf
+│   ├── QCintro.pdf
+│   ├── QCI.pdf
+│   ├── QCML_.pdf
+│   ├── QCProblems.pdf
+│   ├── Q_inspired_ML.pdf
+│   ├── QML.pdf
+│   ├── QM.pdf
+│   ├── QNL.pdf
+│   ├── QRL.pdf
+│   ├── QSWALKJL_Julia_package_for_quantum_stochastic_walk.pdf
+│   ├── SciPostPhysLectNotes_61.pdf
+│   ├── Senior_thesis.pdf
+│   ├── Strogatz, S.H. - Nonlinear dynamics and chaos.pdf
+│   ├── tensorcircuit-readthedocs-io-en-latest.pdf
+│   └── torchquantum-readthedocs-io-en-latest.pdf
+├── QuantumComputing
+│   ├── decay_coherent_state.py
+│   ├── example.py
+│   ├── ho_in_heat_bath.py
+│   ├── plot_wigner_function.py
+│   ├── qutip_docs
+│   │   ├── Google AI Blog_ Quantum Supremacy Using a Programmable Superconducting Processor_files
+│   │   │   ├── 1893845785-widgets.js
+│   │   │   ├── 3416767676-css_bundle_v2.css
+│   │   │   ├── activityi.html
+│   │   │   ├── analytics.js
+│   │   │   ├── authorization.css
+│   │   │   ├── css
+│   │   │   ├── dc_pre=CLeV5J2o-O8CFQ95KwodGG8NBA
+│   │   │   ├── Fig 5.png
+│   │   │   ├── GoogleAI_logo_horizontal_color_rgb.png
+│   │   │   ├── icon
+│   │   │   ├── icon18_wrench_allbkg.png
+│   │   │   ├── image2.png
+│   │   │   ├── image5 - Edited.jpg
+│   │   │   ├── image7.png
+│   │   │   ├── jquery.min.js
+│   │   │   ├── lang-css.min.js
+│   │   │   ├── post_facebook_black_24dp.png
+│   │   │   ├── post_twitter_black_24dp.png
+│   │   │   ├── prettify.min.css
+│   │   │   ├── prettify.min.js
+│   │   │   └── Screenshot 2019-10-22 at 3.48.59 PM.png
+│   │   ├── Google AI Blog_ Quantum Supremacy Using a Programmable Superconducting Processor.html
+│   │   ├── NISQ.pdf
+│   │   ├── PIQC Lecture 1.pdf
+│   │   ├── Pitchford_Alexander_James_Gordon.pdf
+│   │   ├── QCI.pdf
+│   │   ├── QSupremacy.pdf
+│   │   ├── qutip-doc-4.3.pdf
+│   │   ├── SGanguly-2.pdf
+│   │   └── TFQ_whitePaper.pdf
+│   ├── qutip_tutorals.ipynb
+│   ├── rabi_splitting.py
+│   ├── readme.txt
+│   ├── requirements.txt
+│   └── second_order_optical_coherence.py
+├── README.md
+├── res.txt
+├── ShellScripts
+│   ├── caffe_build_and_installation
+│   │   ├── build_caffe.sh
+│   │   └── README.MD
+│   ├── convert_tflite.sh
+│   ├── convert_to_tf2.sh
+│   ├── open_vino_setup.sh
+│   └── snpe_setup.sh
+├── Tools
+│   ├── 16_bit_onnx.py
+│   ├── alpha_pose_2_onnx.py
+│   ├── calc_fps.py
+│   ├── change_names.py
+│   ├── check_onnx.py
+│   ├── coco_annotation_format.txt
+│   ├── coco_crop_masked.py
+│   ├── conver2video_multi.py
+│   ├── conver2video.py
+│   ├── convert_IR_video_to_gray_multiple.py
+│   ├── convert_IR_video_to_gray.py
+│   ├── convert_mixed.py
+│   ├── convert_to_gray.py
+│   ├── convert_to_half.py
+│   ├── convert_to_n_to_voc_multiple.py
+│   ├── convert_to_n_to_voc.py
+│   ├── convert_to_n_to_voc_single.py
+│   ├── convert_to_onnx_multiple_16_bit.py
+│   ├── copy_images_of_corresponding_json_files.py
+│   ├── copy_json_files_of_corresponding_images.py
+│   ├── copy_to_new_folder.py
+│   ├── copy_txt_files_of_corresponding_images.py
+│   ├── cross_validation.py
+│   ├── cv
+│   │   ├── car.jpg
+│   │   ├── color_seg.py
+│   │   └── watermelon_out.jpg
+│   ├── detectron2_tutorial.py
+│   ├── draw_voc.py
+│   ├── erese_flash_drive.sh
+│   ├── example.py
+│   ├── extract_frames.py
+│   ├── extract_frames_.py
+│   ├── extract_frames_single_file.py
+│   ├── ffmpeg_extract_franes.py
+│   ├── find_bb_errors.py
+│   ├── find_duplicates.py
+│   ├── find_relevent_frames.sh
+│   ├── frames.py
+│   ├── imageoperation.py
+│   ├── img_operations.py
+│   ├── improve.py
+│   ├── infer_lightning.py
+│   ├── infer_multiple_16bit.py
+│   ├── info_coco_annotation.txt
+│   ├── install_dlc.txt
+│   ├── install_dlc_.txt
+│   ├── IR_to_RGB.py
+│   ├── light_posenet_pytorch_paper.pdf
+│   ├── Matrix_mul.py
+│   ├── Matrix_Multiplication.py
+│   ├── merge_clips.py
+│   ├── merge_jsons.py
+│   ├── mixed_prec.py
+│   ├── move_test_data.py
+│   ├── multiply.py
+│   ├── onnx32_to_onnx16.py
+│   ├── post_training.py
+│   ├── pred2label_img.py
+│   ├── qt_aware.py
+│   ├── quantize_onnx.py
+│   ├── quantize.py
+│   ├── remove_16_frames.py
+│   ├── remove_duplicates.py
+│   ├── remove_from_name.py
+│   ├── review_posenet_annotation.py
+│   ├── rmlist.py
+│   ├── roi_vectors
+│   │   ├── ang.csv
+│   │   ├── ang.png
+│   │   ├── cords.csv
+│   │   ├── cords_in_polar.csv
+│   │   ├── fx.csv
+│   │   ├── fx.png
+│   │   ├── fy.csv
+│   │   ├── fy.png
+│   │   ├── grids.csv
+│   │   ├── initial.png
+│   │   ├── mag.csv
+│   │   ├── mag.png
+│   │   ├── tracked_after15_frames.png
+│   │   └── vectors.py
+│   ├── select_random.py
+│   ├── select_random_test_data.py
+│   ├── split_video (copy).py
+│   ├── split_video.py
+│   ├── tf.py
+│   ├── train_lightning.py
+│   ├── train_lightning.sh
+│   ├── train_mixed.py
+│   ├── train_test_split_darknet.py
+│   ├── train_tf.py
+│   ├── transfer_learning.py
+│   └── video_stab.py
+└── TPU
+    ├── 2021-jouppi.pdf
+    └── 3-4.pdf
+
+27 directories, 415 files
