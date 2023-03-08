@@ -1,5 +1,14 @@
 # Folder Structure:
 
+- docs
+    - README.md
+    - images
+        - image1.png
+        - image2.png
+- assets
+    - example.txt
+
+
   ├── benchmarking
   ├── cloud
   ├── computational_budget_calc
